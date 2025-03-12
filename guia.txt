@@ -1,0 +1,3 @@
+#crear enbtorno virtual
+--> >python -m venv clasificador
+--> >\clasificador\Scripts>activate
