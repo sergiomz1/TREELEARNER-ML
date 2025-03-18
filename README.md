@@ -19,4 +19,35 @@ TreeLearner no solo es un proyecto base para el desarrollo de herramientas de cl
 
 🏗 Estructura general
 
-TreeLearner/ ├── env/ # Entorno virtual de Python (No se versiona) ├── data/ # Datos de imágenes de árboles │ ├── raw/ # Imágenes originales sin procesar │ ├── processed/ # Imágenes preprocesadas │ ├── labels/ # Anotaciones en formato YOLO │ └── metadata.csv # Información sobre las imágenes ├── models/ # Modelos entrenados │ └── yolo/ # Modelos YOLO │ ├── best.pt # Modelo YOLO optimizado │ └── yolov8_config.yaml # Configuración de entrenamiento ├── src/ # Código fuente │ ├── main.py # Punto de entrada del proyecto │ ├── preprocessing.py # Preprocesamiento de imágenes │ ├── model.py # Definición e integración con YOLO │ ├── train.py # Entrenamiento de YOLO │ ├── predict.py # Predicciones con YOLO │ └── evaluate.py # Evaluación del modelo ├── ui/ # Interfaz gráfica │ ├── app.py # Aplicación web o de escritorio │ ├── static/ # Archivos estáticos (CSS, JS, imágenes) │ └── templates/ # Plantillas HTML si se usa Flask ├── notebooks/ # Jupyter Notebooks │ ├── exploratory_analysis.ipynb # Análisis exploratorio de datos │ └── yolo_training.ipynb # Entrenamiento con YOLO ├── tests/ # Pruebas automatizadas │ ├── test_preprocessing.py # Pruebas del preprocesamiento │ └── test_model.py # Pruebas del modelo YOLO ├── logs/ # Registros del sistema │ └── training.log # Registros del entrenamiento ├── requirements.txt # Dependencias del proyecto └── README.md # Documentación general
+TreeLearner/
+│── env/                   # Entorno virtual de Python (No se versiona)
+│── data/                  # Datos de imágenes de árboles
+│   │── raw/               # Imágenes originales sin procesar
+│   │── processed/         # Imágenes preprocesadas
+│   │── labels/            # Anotaciones en formato YOLO
+│   │── metadata.csv       # Información sobre las imágenes
+│── models/                # Modelos entrenados
+│   │── yolo/              # Modelos YOLO
+│   │   │── best.pt        # Modelo YOLO optimizado
+│   │   │── yolov8_config.yaml  # Configuración de entrenamiento
+│── src/                   # Código fuente
+│   │── main.py            # Punto de entrada del proyecto
+│   │── preprocessing.py   # Preprocesamiento de imágenes
+│   │── model.py           # Definición e integración con YOLO
+│   │── train.py           # Entrenamiento de YOLO
+│   │── predict.py         # Predicciones con YOLO
+│   │── evaluate.py        # Evaluación del modelo
+│── ui/                    # Interfaz gráfica
+│   │── app.py             # Aplicación web o de escritorio
+│   │── static/            # Archivos estáticos (CSS, JS, imágenes)
+│   │── templates/         # Plantillas HTML si se usa Flask
+│── notebooks/             # Jupyter Notebooks
+│   │── exploratory_analysis.ipynb  # Análisis exploratorio de datos
+│   │── yolo_training.ipynb        # Entrenamiento con YOLO
+│── tests/                 # Pruebas automatizadas
+│   │── test_preprocessing.py  # Pruebas del preprocesamiento
+│   │── test_model.py          # Pruebas del modelo YOLO
+│── logs/                  # Registros del sistema
+│   │── training.log        # Registros del entrenamiento
+│── requirements.txt       # Dependencias del proyecto
+│── README.md              # Documentación general
